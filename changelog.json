@@ -1,0 +1,17 @@
+[
+    {
+        "version": "v1.0",
+        "date": "16.12.2025",
+        "description": "Kararlı Sürüm (v1.0)",
+        "changes": [
+            "PTT İrsaliye Yönetim Sistemi (Oluşturma, Düzenleme, Silme, Yazdırma).",
+            "Gelişmiş Gönderi Sorgulama ve Takip Modülü.",
+            "Kullanıcı Yetkilendirme Sistemi (Yönetici ve Standart Kullanıcı).",
+            "Güvenlik Modülü: Eşzamanlı oturum kontrolü ve IP çakışma tespiti.",
+            "Detaylı İşlem Geçmişi (Log) ve Güvenlik Kayıtları.",
+            "Modern Arayüz: Koyu Tema (Dark Mode) desteği ve Animasyonlu Arka Plan.",
+            "Dinamik İstatistikler ve Yönetim Paneli.",
+            "Kurumsal Kimlik Ayarları (Kurum Adı vb. düzenleme)."
+        ]
+    }
+]
