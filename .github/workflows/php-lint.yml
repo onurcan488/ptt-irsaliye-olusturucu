@@ -1,0 +1,25 @@
+name: PHP Syntax Check
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  php-lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        extensions: mbstring, intl, pdo, pdo_mysql
+        coverage: none
+
+    - name: Check PHP Syntax
+      run: find . -name "*.php" ! -path "./vendor/*" -print0 | xargs -0 -n1 php -l
